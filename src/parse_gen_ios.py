@@ -1,6 +1,6 @@
 
 from utils import *
-from codeio_utils import *
+from spec_utils import *
 import subprocess
 import tempfile
 import os

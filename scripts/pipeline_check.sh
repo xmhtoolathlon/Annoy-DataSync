@@ -1,6 +1,6 @@
 pfn=${1:-data/rawcode_1k_parsed.jsonl}
-ifn=${2:-data/codeio_1k_gens.jsonl}
-ofn=${3:-data/codeio_1k_gens_verified.jsonl}
+ifn=${2:-data/full_1k_gens.jsonl}
+ofn=${3:-data/full_1k_gens_verified.jsonl}
 pythonpath=${4:-"python"}
 runpath=${5:-"./temp/temp/temp"}
 

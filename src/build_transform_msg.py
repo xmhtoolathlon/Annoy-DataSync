@@ -1,7 +1,7 @@
 
 
 import argparse
-from codeio_utils import build_testcases_prompt_advanced
+from spec_utils import build_testcases_prompt_advanced
 from utils import *
 
 if __name__=="__main__":

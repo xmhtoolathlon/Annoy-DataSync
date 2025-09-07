@@ -1,9 +1,9 @@
 
 
-# CodeI/O: Condensing Reasoning Patterns via Code Input-Output Prediction
+# Annoy: This should be a paper Title
 
 <p align="center">
-    📑 <a href="https://huggingface.co/papers/2502.07316" target="_blank">Paper</a> &nbsp&nbsp | &nbsp&nbsp 🌐 <a href="https://codei-o.github.io/" target="_blank">Project Page</a> &nbsp&nbsp | &nbsp&nbsp 🤗 <a href="https://huggingface.co/collections/hkust-nlp/codei-o-67a978e28fd926b56a4f55a2" target="_blank">Released Resources</a> &nbsp&nbsp | &nbsp&nbsp 💾 <a href="https://huggingface.co/datasets/hkust-nlp/CodeIO-PyEdu-Reasoning" target="_blank">Dataset</a> &nbsp&nbsp | &nbsp&nbsp 📦 <a href="https://github.com/hkust-nlp/CodeIO" target="_blank">Repo</a>  
+    📑 <a href="https://huggingface.co/papers/xxxx.xxxxx" target="_blank">Paper</a> &nbsp&nbsp | &nbsp&nbsp 🌐 <a href="https://specx.github.io/" target="_blank">Project Page</a> &nbsp&nbsp | &nbsp&nbsp 🤗 <a href="https://huggingface.co/collections/{hf_namespace}/specx-67a978e28fd926b56a4f55a2" target="_blank">Released Resources</a> &nbsp&nbsp | &nbsp&nbsp 💾 <a href="https://huggingface.co/datasets/{hf_namespace}/Annoy-PyEdu-Reasoning" target="_blank">Dataset</a> &nbsp&nbsp | &nbsp&nbsp 📦 <a href="https://github.com/{github_namespace}/Annoy-DataSync" target="_blank">Repo</a>  
 <br>
 
 <p align="center">
@@ -24,14 +24,14 @@
 - [Acknowledgement](#Acknowledgement)
 
 ## Introduction
-CodeI/O is a novel approach that transforms code-based reasoning patterns into natural language formats to enhance Large Language Models' reasoning capabilities. Unlike traditional methods focusing on specific skills, our approach systematically extracts universal reasoning primitives while maintaining procedural rigor, enabling better performance across various reasoning tasks.
+Annoy-DataSync is a novel approach that transforms code-based reasoning patterns into natural language formats to enhance Large Language Models' reasoning capabilities. Unlike traditional methods focusing on specific skills, our approach systematically extracts universal reasoning primitives while maintaining procedural rigor, enabling better performance across various reasoning tasks.
 
 **Key Features & Contributions**
 - 🔄 Universal Transformation: Converts diverse code patterns into natural language Chain-of-Thought rationales
 - 🧠 Syntax-Decoupled: Decouples reasoning from code syntax while preserving logical structure
 - 📊 Multi-Task Enhancement: Improves performance across symbolic, scientific, logic, mathematical, commonsense and code reasoning
 - ✨ Fully-Verifiable: Supports precise prediction verification through cached ground-truth matching or code re-execution
-- 🚀 Advanced Iteration: Enhanced version (CodeI/O++) with multi-turn revision for better accuracy
+- 🚀 Advanced Iteration: Enhanced version (Annoy++) with multi-turn revision for better accuracy
 
 ## Released Resources
 
@@ -39,11 +39,11 @@ CodeI/O is a novel approach that transforms code-based reasoning patterns into n
 
 |Dataset|Link|
 |-|-|
-|CodeI/O-PythonEdu-Reasoning|[🤗](https://huggingface.co/datasets/hkust-nlp/CodeIO-Pyedu-Reasoning)|
-|CodeI/O-PythonEdu-Raw|[🤗](https://huggingface.co/datasets/hkust-nlp/CodeIO-PyEdu-Reasoning-Raw)|
-|LeetCode-O Benchmark|[🤗](https://huggingface.co/datasets/hkust-nlp/LeetCode-O)|
+|Annoy-PythonEdu-Reasoning|[🤗](https://huggingface.co/datasets/{hf_namespace}/Annoy-Pyedu-Reasoning)|
+|Annoy-PythonEdu-Raw|[🤗](https://huggingface.co/datasets/{hf_namespace}/Annoy-PyEdu-Reasoning-Raw)|
+|LCO Benchmark|[🤗](https://huggingface.co/datasets/{hf_namespace}/LCO)|
 
-Due to our collaborators' compliance requirements, we only release the PythonEdu-Reasoning subset of the CodeI/O(++) dataset.
+Due to our collaborators' compliance requirements, we only release the PythonEdu-Reasoning subset of the Annoy(++) dataset.
 
 
 
@@ -51,8 +51,8 @@ Due to our collaborators' compliance requirements, we only release the PythonEdu
 <table>
     <tr>
         <th rowspan="2">Base Model / Training</th>
-        <th colspan="2">CodeI/O</th>
-        <th colspan="2">CodeI/O++</th>
+        <th colspan="2">Annoy</th>
+        <th colspan="2">Annoy++</th>
     </tr>
     <tr>
         <th>Stage 1</th>
@@ -62,25 +62,24 @@ Due to our collaborators' compliance requirements, we only release the PythonEdu
     </tr>
     <tr>
         <td>Qwen 2.5 7B Coder</td>
-        <!-- <td style="background-color: #e6f3ff; text-align: center; vertical-align: middle;"><a href="https://huggingface.co/hkust-nlp/qwen2.5-7b-coder_codeio_stage1">Link</a></td> -->
-        <td style="text-align: center; vertical-align: middle;"><a href="https://huggingface.co/hkust-nlp/qwen2.5-7b-coder_codeio_stage1">🤗</a></td>
-        <td style="text-align: center; vertical-align: middle;"><a href="https://huggingface.co/hkust-nlp/qwen2.5-7b-coder_codeio">🤗</a></td>
-        <td style="text-align: center; vertical-align: middle;"><a href="https://huggingface.co/hkust-nlp/qwen2.5-7b-coder_codeio_pp_stage1">🤗</a></td>
-        <td style="text-align: center; vertical-align: middle;"><a href="https://huggingface.co/hkust-nlp/qwen2.5-7b-coder_codeio_pp">🤗</a></td>
+        <td style="text-align: center; vertical-align: middle;"><a href="https://huggingface.co/{hf_namespace}/qwen2.5-7b-coder_spec_stage1">🤗</a></td>
+        <td style="text-align: center; vertical-align: middle;"><a href="https://huggingface.co/{hf_namespace}/qwen2.5-7b-coder_spec">🤗</a></td>
+        <td style="text-align: center; vertical-align: middle;"><a href="https://huggingface.co/{hf_namespace}/qwen2.5-7b-coder_spec_pp_stage1">🤗</a></td>
+        <td style="text-align: center; vertical-align: middle;"><a href="https://huggingface.co/{hf_namespace}/qwen2.5-7b-coder_spec_pp">🤗</a></td>
     </tr>
     <tr>
         <td>LLaMA 3.1 8B</td>
-        <td style="text-align: center; vertical-align: middle;"><a href="https://huggingface.co/hkust-nlp/llama3.1-8b_codeio_stage1">🤗</a></td>
-        <td style="text-align: center; vertical-align: middle;"><a href="https://huggingface.co/hkust-nlp/llama3.1-8b_codeio">🤗</a></td>
-        <td style="text-align: center; vertical-align: middle;"><a href="https://huggingface.co/hkust-nlp/llama3.1-8b_codeio_pp_stage1">🤗</a></td>
-        <td style="text-align: center; vertical-align: middle;"><a href="https://huggingface.co/hkust-nlp/llama3.1-8b_codeio_pp">🤗</a></td>
+        <td style="text-align: center; vertical-align: middle;"><a href="https://huggingface.co/{hf_namespace}/llama3.1-8b_spec_stage1">🤗</a></td>
+        <td style="text-align: center; vertical-align: middle;"><a href="https://huggingface.co/{hf_namespace}/llama3.1-8b_spec">🤗</a></td>
+        <td style="text-align: center; vertical-align: middle;"><a href="https://huggingface.co/{hf_namespace}/llama3.1-8b_spec_pp_stage1">🤗</a></td>
+        <td style="text-align: center; vertical-align: middle;"><a href="https://huggingface.co/{hf_namespace}/llama3.1-8b_spec_pp">🤗</a></td>
     </tr>
     <tr>
         <td>DeepSeek v2 Lite Coder</td>
-        <td style="text-align: center; vertical-align: middle;"><a href="https://huggingface.co/hkust-nlp/dsv2-lite-coder_codeio_stage1">🤗</a></td>
-        <td style="text-align: center; vertical-align: middle;"><a href="https://huggingface.co/hkust-nlp/dsv2-lite-coder_codeio">🤗</a></td>
-        <td style="text-align: center; vertical-align: middle;"><a href="https://huggingface.co/hkust-nlp/dsv2-lite-coder_codeio_pp_stage1">🤗</a></td>
-        <td style="text-align: center; vertical-align: middle;"><a href="https://huggingface.co/hkust-nlp/dsv2-lite-coder_codeio_pp">🤗</a></td>
+        <td style="text-align: center; vertical-align: middle;"><a href="https://huggingface.co/{hf_namespace}/dsv2-lite-coder_spec_stage1">🤗</a></td>
+        <td style="text-align: center; vertical-align: middle;"><a href="https://huggingface.co/{hf_namespace}/dsv2-lite-coder_spec">🤗</a></td>
+        <td style="text-align: center; vertical-align: middle;"><a href="https://huggingface.co/{hf_namespace}/dsv2-lite-coder_spec_pp_stage1">🤗</a></td>
+        <td style="text-align: center; vertical-align: middle;"><a href="https://huggingface.co/{hf_namespace}/dsv2-lite-coder_spec_pp">🤗</a></td>
     </tr>
 </table>
 
@@ -91,22 +90,22 @@ Due to our collaborators' compliance requirements, we only release the PythonEdu
 
 We provide both the `requirements.txt` and `environment.yaml`. You can choose either way to setup the environment.
 ```
-conda create -n codeio_exec python 3.11
-conda activate codeio_exec
+conda create -n spec_exec python 3.11
+conda activate spec_exec
 pip install -r requirements.txt
 ```
 or
 ```
-conda env create -f environment.yaml --name codeio_exec
-conda activate codeio_exec
+conda env create -f environment.yaml --name spec_exec
+conda activate spec_exec
 ```
 Please note that our setup does not guarantee the execution of all types of Python code; you may need to update the environment to meet your personal requirements when processing different code files.
 
 ### Data Processing
 
-We provide a complete guide for you to build data for CodeI/O on a toy dataset. After all these steps you can get a dataset with the same format as in our [huggingface dataset](https://huggingface.co/datasets/hkust-nlp/CodeIO-Pyedu-Reasoning).
+We provide a complete guide for you to build data for Annoy on a toy dataset. After all these steps you can get a dataset with the same format as in our [huggingface dataset](https://huggingface.co/datasets/{hf_namespace}/Annoy-Pyedu-Reasoning).
 
-All intermediate results will be stored under `./data`, but we have also provided a set of pre-processed files under `./processed_data`.
+All intermediate results will be stored under `./data`.
 
 #### Step 1: Convert raw code files into the unified format.
 
@@ -145,16 +144,16 @@ The `--python_path` is the python path you will use to run the I/O pair generati
 #### Step 3: Build Input-Output Prediction Instances
 We only pick 3 input prediction and 3 output prediction instances for each sample.
 ```
-python ./src/build_codeio_msg.py \
+python ./src/build_spec_msg.py \
 --input_file data/rawcode_1k_parsed.jsonl \
---output_file data/codeio_1k_msg.jsonl
+--output_file data/spec_1k_msg.jsonl
 ```
 
-#### Step 4: Inference on CodeI/O data
+#### Step 4: Inference on Annoy data
 ```
 python ./src/batched_api_inference.py \
---input data/codeio_1k_msg.jsonl \
---output data/codeio_1k_gens.jsonl \
+--input data/spec_1k_msg.jsonl \
+--output data/spec_1k_gens.jsonl \
 --model deepseek-chat \
 --num_process 10 \
 --num_thread 10 \
@@ -166,8 +165,8 @@ python ./src/batched_api_inference.py \
 ```
 bash ./scripts/pipeline_check.sh \
 data/rawcode_1k_parsed.jsonl \
-data/codeio_1k_gens.jsonl \
-data/codeio_1k_gens_verified.jsonl \
+data/spec_1k_gens.jsonl \
+data/spec_1k_gens_verified.jsonl \
 python \
 ./temp/temp/temp
 ```
@@ -176,15 +175,15 @@ In the bash script we run the verification for several times to try our best avo
 #### Step 6: Second Turn - Revision and Re-verification
 ##### Step 6.1: Build Multi-turn Messages
 ```
-python ./src/build_codeio_rev_msg.py \
---input_file data/codeio_1k_gens_verified.jsonl \
---output_file data/codeio_1k_msg_rev.jsonl
+python ./src/build_spec_rev_msg.py \
+--input_file data/spec_1k_gens_verified.jsonl \
+--output_file data/spec_1k_msg_rev.jsonl
 ```
 ##### Step 6.2: Re-generate
 ```
 python ./src/batched_api_inference.py \
---input data/codeio_1k_msg_rev.jsonl \
---output data/codeio_1k_gens_rev.jsonl \
+--input data/spec_1k_msg_rev.jsonl \
+--output data/spec_1k_gens_rev.jsonl \
 --model deepseek-chat \
 --num_process 10 \
 --num_thread 10 \
@@ -196,33 +195,22 @@ python ./src/batched_api_inference.py \
 ```
 bash ./scripts/pipeline_check.sh \
 data/rawcode_1k_parsed.jsonl \
-data/codeio_1k_gens_rev.jsonl \
-data/codeio_1k_gens_rev_verified.jsonl \
+data/spec_1k_gens_rev.jsonl \
+data/spec_1k_gens_rev_verified.jsonl \
 python \
 ./temp/temp/temp
 ```
 ##### Step 6.4: Final Data
 ```
-python ./src/assemble_codeio_demo.py \
---result_file_turn1 data/codeio_1k_gens_verified.jsonl \
---result_file_turn2 data/codeio_1k_gens_rev_verified.jsonl \
---output_file codeio_demo_final.jsonl
+python ./src/assemble_spec_demo.py \
+--result_file_turn1 data/spec_1k_gens_verified.jsonl \
+--result_file_turn2 data/spec_1k_gens_rev_verified.jsonl \
+--output_file spec_demo_final.jsonl
 ```
-By doing so, you can get data `data/codeio_demo_final.jsonl` with the same format as in our [huggingface dataset](https://huggingface.co/datasets/hkust-nlp/CodeIO-Pyedu-Reasoning).
+By doing so, you can get data `data/spec_demo_final.jsonl` with the same format as in our [huggingface dataset](https://huggingface.co/datasets/{hf_namespace}/Annoy-Pyedu-Reasoning).
 
 ### Training
 You can use any popular training framework to train your model like [llama-factory](https://github.com/hiyouga/LLaMA-Factory). 
 
-## Citation
-If you find this work helpful, please kindly cite as:
-```
-@article{li2025codeio,
-  title={CodeI/O: Condensing Reasoning Patterns via Code Input-Output Prediction},
-  author={Li, Junlong and Guo, Daya and Yang, Dejian and Xu, Runxin and Wu, Yu and He, Junxian},
-  journal={arXiv preprint arXiv:2502.07316},
-  year={2025}
-}
-```
-
 ## Acknowledgement
-We thank Fan Zhou, Wei Liu and Yiheng Xu for their valuable feedback and suggestions! 🤗🤗🤗
+We thank Koala NN, TCLV and OMEN for their valuable feedback and suggestions! 🤗🤗🤗
